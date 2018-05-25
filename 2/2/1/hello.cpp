@@ -9,6 +9,7 @@ int main()
 	
 	//·½·¨2£º
 	using namespace std;
-	cout << "Hello, World";	
+	cout << "Hello, World\n";	
+	system("pause");
 	
 } 
