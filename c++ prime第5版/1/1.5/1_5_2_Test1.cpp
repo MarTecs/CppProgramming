@@ -19,11 +19,11 @@ int main()
       }
       else
       {
-        std::cout << currItem << " occurs " << cnt << " times" << std::endl;
+        std::cout << currItem.isbn() << " occurs " << cnt << " times" << std::endl;
         currItem = item1;
       }
     }
-    std::cout << currItem << " occurs " << cnt << " times" << std::endl;
+    std::cout << currItem.isbn() << " occurs " << cnt << " times" << std::endl;
   }
   return 0;
 }
