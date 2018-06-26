@@ -6,24 +6,24 @@
  */
 int main()
 {
-  Sales_item item1, item2, currItem;
+  Sales_item currItem, item1;
   int cnt = 1;
-  if ( std::cin >> item1 )
+  if ( std::cin >> currItem )
   {
-    currItem = item1;
-    while ( std::cin >> item2 )
+    while ( std::cin >> item1 )
     {
-      if ( currItem.isbn() == item2.isbn() )
+      if ( currItem.isbn() == item1.isbn() )
       {
-        currItem += item2;
         cnt++;
-      } else {
+        currItem = item1;
+      }
+      else
+      {
         std::cout << currItem << " occurs " << cnt << " times" << std::endl;
-        currItem = item2;
-        cnt = 1;
+        currItem = item1;
       }
     }
-    std::cout << item1 << " occurs " << cnt << " times" << std::endl;
+    std::cout << currItem << " occurs " << cnt << " times" << std::endl;
   }
   return 0;
 }
