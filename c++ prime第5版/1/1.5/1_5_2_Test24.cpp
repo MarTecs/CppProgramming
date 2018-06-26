@@ -7,8 +7,24 @@
 
 int main()
 {
+  Sales_item currItem, item1;
+  if ( std::cin >> currItem )
+  {
+    while ( std::cin >> item1 )
+    {
+      if ( currItem.isbn() == item1.isbn() )
+      {
+        currItem += item1;
+      }
+      else
+      {
+        std::cout << currItem << std::endl;
+        currItem = item1;
+      }
 
+    }
 
-
+    std::cout << currItem << std::endl;
+  }
   return 0;
 }

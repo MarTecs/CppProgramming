@@ -15,11 +15,10 @@ int main()
       if ( currItem.isbn() == item1.isbn() )
       {
         cnt++;
-        currItem = item1;
       }
       else
       {
-        std::cout << currItem.isbn() << " occurs " << cnt << " times" << std::endl;
+        std::cout << currItem.isbn() << " occurs " << cnt << " times" << "\n";
         currItem = item1;
       }
     }
