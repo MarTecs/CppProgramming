@@ -10,11 +10,9 @@
 using namespace std;
 int main(int argc, char const *argv[]) {
   string word;
-  while (cin >> word) 
+  while (cin >> word)
     cout << word << endl;
   }
-
-
 
   return 0;
 }
